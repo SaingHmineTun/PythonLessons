@@ -1,0 +1,49 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3434b3e2-f80e-406e-9a51-f0997b5fbbc7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Lesson14_ImportingModules.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication</Name>
+    <RootNamespace>PythonApplication</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Lesson10_String.py" />
+    <Compile Include="Lesson11_Set.py" />
+    <Compile Include="Lesson12_Dictionary.py" />
+    <Compile Include="Lesson13_Print.py" />
+    <Compile Include="Lesson14_Format_Input.py" />
+    <Compile Include="Lesson14_ImportingModules.py" />
+    <Compile Include="Lesson1_Variable.py" />
+    <Compile Include="Lesson2_NumericLiteral.py" />
+    <Compile Include="Lesson3_StringLiteral.py" />
+    <Compile Include="Lesson4_BooleanLiteral.py" />
+    <Compile Include="Lesson5_SpecialLiteral.py" />
+    <Compile Include="Lesson6_CollectionLiteral.py" />
+    <Compile Include="Lesson7_Numbers.py" />
+    <Compile Include="Lesson8_List.py" />
+    <Compile Include="Lesson9_Tuple.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
